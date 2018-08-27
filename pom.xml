@@ -9,7 +9,7 @@
 
 	<name>Angular</name>
 	<artifactId>webjar-angular</artifactId>
-	<version>6.1.4-SNAPSHOT</version>
+	<version>6.1.4</version>
 	<description>Angular libraries.</description>
 	
 	<properties>
@@ -80,7 +80,7 @@
 							<target>
 								<copy todir="${webjar.target}">
 									<fileset dir="${src.rootdir}" includes="LICENSE,README.md" />
-									<fileset dir="${src.rootdir}/node_modules/@angular" includes="*/bundles/*.*"/>
+									<fileset dir="${src.rootdir}/node_modules/@angular" includes="*/bundles/*.*" />
 								</copy>
 							</target>
 						</configuration>
@@ -89,4 +89,8 @@
 			</plugin>
 		</plugins>
 	</build>
+
+  <scm>
+    <tag>6.1.4</tag>
+  </scm>
 </project>

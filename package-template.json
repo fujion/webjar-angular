@@ -1,0 +1,23 @@
+{
+  "name": "webjar-angular",
+  "version": "${version.unrevise}",
+  "description": "Angular libraries",
+  "dependencies": {
+    "@angular/animations": "${version.unrevise}",
+    "@angular/common": "${version.unrevise}",
+    "@angular/compiler": "${version.unrevise}",
+    "@angular/core": "${version.unrevise}",
+    "@angular/elements": "${version.unrevise}",
+    "@angular/forms": "${version.unrevise}",
+    "@angular/http": "${version.unrevise}",
+    "@angular/language-service": "${version.unrevise}",
+    "@angular/platform-browser": "${version.unrevise}",
+    "@angular/platform-browser-dynamic": "${version.unrevise}",
+    "@angular/platform-server": "${version.unrevise}",
+    "@angular/platform-webworker": "${version.unrevise}",
+    "@angular/platform-webworker-dynamic": "${version.unrevise}",
+    "@angular/router": "${version.unrevise}",
+    "@angular/service-worker": "${version.unrevise}",
+    "@angular/upgrade": "${version.unrevise}"
+    }
+}

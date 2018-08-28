@@ -1,7 +1,7 @@
 {
-  "name": "webjar-angular",
+  "name": "${project.artifactId}",
   "version": "${version.unrevise}",
-  "description": "Angular libraries",
+  "description": "${project.description}",
   "dependencies": {
     "@angular/animations": "${version.unrevise}",
     "@angular/common": "${version.unrevise}",

@@ -4,12 +4,12 @@
 	<parent>
 		<groupId>org.fujion.webjars</groupId>
 		<artifactId>fujion-webjars</artifactId>
-		<version>2.1.1</version>
+		<version>2.1.3-SNAPSHOT</version>
 	</parent>
 
 	<name>Angular</name>
 	<artifactId>webjar-angular</artifactId>
-	<version>7.2.4-1-SNAPSHOT</version>
+	<version>8.0.2-SNAPSHOT</version>
 	<description>Angular libraries.</description>
 	
 	<properties>
@@ -29,8 +29,6 @@
 				    "@angular/core-testing": "core/bundles/core-testing.umd.js",
 				    "@angular/elements": "elements/bundles/elements.umd.js",
 				    "@angular/forms": "forms/bundles/forms.umd.js",
-				    "@angular/http": "http/bundles/http.umd.js",
-				    "@angular/http-testing": "http/bundles/http-testing.umd.js",
 				    "@angular/language-service": "language-service/bundles/language-service.umd.js",
 				    "@angular/platform-browser": "platform-browser/bundles/platform-browser.umd.js",
 				    "@angular/platform-browser-animation": "platform-browser/bundles/platform-browser-animations.umd.js",

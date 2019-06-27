@@ -76,10 +76,10 @@
 						<id>postcompile</id>
 						<configuration>
 							<target>
-								<copy todir="${webjar.target}">
+								<move todir="${webjar.target}">
 									<fileset dir="${src.rootdir}" includes="LICENSE,README.md" />
 									<fileset dir="${src.rootdir}/node_modules/@angular" includes="*/bundles/*.*" />
-								</copy>
+								</move>
 							</target>
 						</configuration>
 					</execution>

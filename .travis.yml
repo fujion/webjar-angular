@@ -3,7 +3,7 @@ sudo: true
 jdk:
 - openjdk8
 script:
-  - mvn test -B
+  - mvn test -B -s ./travis/settings.xml
   - chmod +x ./travis/deploy.sh
   - "./travis/deploy.sh"
 env:

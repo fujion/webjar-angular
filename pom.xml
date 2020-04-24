@@ -12,45 +12,6 @@
 	<version>8.0.2-SNAPSHOT</version>
 	<description>Angular libraries.</description>
 	
-	<properties>
-		<systemjs>
-			{
-				"paths": {
-				    "@angular/animations": "animations/bundles/animations.umd.js",
-				    "@angular/animations-browser": "animations/bundles/animations-browser.umd.js",
-				    "@angular/animations-browser-testing": "animations/bundles/animations-browser-testing.umd.js",
-				    "@angular/common": "common/bundles/common.umd.js",
-				    "@angular/common-testing": "common/bundles/common-testing.umd.js",
-				    "@angular/common-http": "common/bundles/common-http.umd.js",
-				    "@angular/common-http-testing": "common/bundles/common-http-testing.umd.js",
-				    "@angular/compiler": "compiler/bundles/compiler.umd.js",
-				    "@angular/compiler-testing": "compiler/bundles/compiler-testing.umd.js",
-				    "@angular/core": "core/bundles/core.umd.js",
-				    "@angular/core-testing": "core/bundles/core-testing.umd.js",
-				    "@angular/elements": "elements/bundles/elements.umd.js",
-				    "@angular/forms": "forms/bundles/forms.umd.js",
-				    "@angular/language-service": "language-service/bundles/language-service.umd.js",
-				    "@angular/platform-browser": "platform-browser/bundles/platform-browser.umd.js",
-				    "@angular/platform-browser-animation": "platform-browser/bundles/platform-browser-animations.umd.js",
-				    "@angular/platform-browser-testing": "platform-browser/bundles/platform-browser-testing.umd.js",
-				    "@angular/platform-browser-dynamic": "platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js",
-				    "@angular/platform-browser-dynamic-testing": "platform-browser-dynamic/bundles/platform-browser-dynamic-testing.umd.js",
-				    "@angular/platform-server": "platform-server/bundles/platform-server.umd.js",
-				    "@angular/platform-server-testing": "platform-server/bundles/platform-server-testing.umd.js",
-				    "@angular/platform-webworker": "platform-webworker/bundles/platform-webworker.umd.js",
-				    "@angular/platform-webworker-dynamic": "platform-webworker-dynamic/bundles/platform-webworker-dynamic.umd.js",
-				    "@angular/router": "router/bundles/router.umd.js",
-				    "@angular/router-testing": "router/bundles/router-testing.umd.js",
-				    "@angular/router-upgrade": "router/bundles/router-upgrade.umd.js",
-				    "@angular/service-worker": "service-worker/bundles/service-worker.umd.js",
-				    "@angular/service-worker-config": "service-worker/bundles/service-worker-config.umd.js",
-				    "@angular/upgrade": "upgrade/bundles/upgrade.umd.js",
-				    "@angular/upgrade-static": "upgrade/bundles/upgrade-static.umd.js"
-				}
-			}			
-		</systemjs>
-	</properties>
-	
 	<build>
 		<plugins>
 			<plugin>
@@ -59,9 +20,6 @@
 				<executions>
 					<execution>
 						<id>npm-install</id>
-						<configuration>
-							<skip>false</skip>
-						</configuration>
 					</execution>
 				</executions>
 			</plugin>

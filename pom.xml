@@ -9,7 +9,7 @@
 
 	<name>Angular</name>
 	<artifactId>webjar-angular</artifactId>
-	<version>8.0.2-SNAPSHOT</version>
+	<version>9.1.3-SNAPSHOT</version>
 	<description>Angular libraries.</description>
 	
 	<build>

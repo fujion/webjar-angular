@@ -1,5 +1,5 @@
 {
-  "imports": {
+  "paths": {
     "@angular/animations": "animations/bundles/animations.umd.js",
     "@angular/animations-browser": "animations/bundles/animations-browser.umd.js",
     "@angular/animations-browser-testing": "animations/bundles/animations-browser-testing.umd.js",

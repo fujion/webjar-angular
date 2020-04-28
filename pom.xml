@@ -42,10 +42,12 @@
 						<id>postcompile</id>
 						<configuration>
 							<target>
-								<move todir="${webjar.target}">
+								<copy todir="${webjar.target}">
 									<fileset dir="${src.rootdir}" includes="LICENSE,README.md" />
-									<fileset dir="${src.rootdir}/node_modules/@angular" includes="*/bundles/*.*" />
-								</move>
+								</copy>
+								<copy todir="${webjar.target}/dist" flatten="true">
+									<fileset dir="${src.rootdir}/node_modules/@angular" includes="**/bundles/*.*" />
+								</copy>
 							</target>
 						</configuration>
 					</execution>

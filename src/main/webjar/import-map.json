@@ -1,5 +1,5 @@
 {
-  "paths": {
+  "imports": {
     "@angular/animations": "dist/animations.umd.js",
     "@angular/animations-browser": "dist/animations-browser.umd.js",
     "@angular/animations-browser-testing": "dist/animations-browser-testing.umd.js",

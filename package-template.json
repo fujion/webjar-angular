@@ -9,7 +9,6 @@
     "@angular/core": "${version.unrevise}",
     "@angular/elements": "${version.unrevise}",
     "@angular/forms": "${version.unrevise}",
-    "@angular/language-service": "${version.unrevise}",
     "@angular/platform-browser": "${version.unrevise}",
     "@angular/platform-browser-dynamic": "${version.unrevise}",
     "@angular/platform-server": "${version.unrevise}",

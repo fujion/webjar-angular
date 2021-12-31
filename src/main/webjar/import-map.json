@@ -13,7 +13,6 @@
     "@angular/core-testing": "dist/core-testing.umd.js",
     "@angular/elements": "dist/elements.umd.js",
     "@angular/forms": "dist/forms.umd.js",
-    "@angular/language-service": "dist/language-service.umd.js",
     "@angular/platform-browser": "dist/platform-browser.umd.js",
     "@angular/platform-browser-animation": "dist/platform-browser-animations.umd.js",
     "@angular/platform-browser-testing": "dist/platform-browser-testing.umd.js",

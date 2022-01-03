@@ -9,9 +9,13 @@
 
 	<name>Angular</name>
 	<artifactId>webjar-angular</artifactId>
-	<version>12.2.14</version>
+	<version>13.1.1-1</version>
 	<description>Angular libraries.</description>
-	
+
+	<properties>
+		<skip.minification.js>false</skip.minification.js>
+	</properties>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -30,7 +34,8 @@
 						<id>precompile</id>
 						<configuration>
 							<target>
-								<copy tofile="${src.rootdir}/package.json" file="${basedir}/package-template.json">
+								<copy todir="${src.rootdir}">
+									<fileset dir="${basedir}/staging"/>
 							        <filterchain>
 							            <expandproperties />
 							        </filterchain>
@@ -42,11 +47,14 @@
 						<id>postcompile</id>
 						<configuration>
 							<target>
+								<exec executable="npm" dir="${src.rootdir}" failonerror="true">
+									<arg line="run bundle" />
+								</exec>
 								<copy todir="${webjar.target}">
 									<fileset dir="${src.rootdir}" includes="LICENSE,README.md" />
 								</copy>
-								<copy todir="${webjar.target}/dist" flatten="true">
-									<fileset dir="${src.rootdir}/node_modules/@angular" includes="**/bundles/*.*" />
+								<copy todir="${webjar.target}/dist">
+									<fileset dir="${src.rootdir}/dist" />
 								</copy>
 							</target>
 						</configuration>

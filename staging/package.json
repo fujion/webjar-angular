@@ -2,6 +2,9 @@
   "name": "${project.artifactId}",
   "version": "${version.unrevise}",
   "description": "${project.description}",
+  "scripts": {
+    "bundle": "rollup -c rollup.config.js"
+  },
   "dependencies": {
     "@angular/animations": "${version.unrevise}",
     "@angular/common": "${version.unrevise}",
@@ -15,5 +18,8 @@
     "@angular/router": "${version.unrevise}",
     "@angular/service-worker": "${version.unrevise}",
     "@angular/upgrade": "${version.unrevise}"
-    }
+    },
+  "devDependencies": {
+    "rollup": "^2.62.0"
+  }
 }

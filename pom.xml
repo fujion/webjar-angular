@@ -4,20 +4,68 @@
 	<parent>
 		<groupId>org.fujion.webjars</groupId>
 		<artifactId>fujion-webjars</artifactId>
-		<version>3.0.0</version>
+		<version>3.2.0-SNAPSHOT</version>
 	</parent>
 
 	<name>Angular</name>
 	<artifactId>webjar-angular</artifactId>
-	<version>13.3.1</version>
+	<version>16.2.9-SNAPSHOT</version>
 	<description>Angular libraries.</description>
 
 	<properties>
 		<skip.minification.js>false</skip.minification.js>
+		<npm-install.skip>false</npm-install.skip>
 	</properties>
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.fujion.webjars</groupId>
+				<artifactId>webjar-validator-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>validate-webjar</id>
+						<configuration>
+							<rules>
+								<rule>file_exists import-map.json</rule>
+								<rule>file_exists README.md</rule>
+								<rule>file_contains LICENSE "MIT License"</rule>
+								<rule>file_exists dist/animations-browser-testing.umd.js</rule>
+								<rule>file_exists dist/animations-browser.umd.js</rule>
+								<rule>file_exists dist/animations.umd.js</rule>
+								<rule>file_exists dist/common-http-testing.umd.js</rule>
+								<rule>file_exists dist/common-http.umd.js</rule>
+								<rule>file_exists dist/common-testing.umd.js</rule>
+								<rule>file_exists dist/common-upgrade.umd.js</rule>
+								<rule>file_exists dist/common.umd.js</rule>
+								<rule>file_exists dist/compiler-testing.umd.js</rule>
+								<rule>file_exists dist/compiler.umd.js</rule>
+								<rule>file_exists dist/core-rxjs-interop.umd.js</rule>
+								<rule>file_exists dist/core-testing.umd.js</rule>
+								<rule>file_exists dist/core.umd.js</rule>
+								<rule>file_exists dist/elements.umd.js</rule>
+								<rule>file_exists dist/forms.umd.js</rule>
+								<rule>file_exists dist/localize.umd.js</rule>
+								<rule>file_exists dist/localize-init.umd.js</rule>
+								<rule>file_exists dist/platform-browser-animations.umd.js</rule>
+								<rule>file_exists dist/platform-browser-dynamic-testing.umd.js</rule>
+								<rule>file_exists dist/platform-browser-dynamic.umd.js</rule>
+								<rule>file_exists dist/platform-browser-testing.umd.js</rule>
+								<rule>file_exists dist/platform-browser.umd.js</rule>
+								<rule>file_exists dist/platform-server-testing.umd.js</rule>
+								<rule>file_exists dist/platform-server.umd.js</rule>
+								<rule>file_exists dist/router-testing.umd.js</rule>
+								<rule>file_exists dist/router-upgrade.umd.js</rule>
+								<rule>file_exists dist/router.umd.js</rule>
+								<rule>file_exists dist/service-worker-config.umd.js</rule>
+								<rule>file_exists dist/service-worker.umd.js</rule>
+								<rule>file_exists dist/upgrade-static.umd.js</rule>
+								<rule>file_exists dist/upgrade.umd.js</rule>
+							</rules>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>

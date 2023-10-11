@@ -1,6 +1,6 @@
 export default [
     {
-        input: './node_modules/@angular/animations/fesm2015/animations.mjs',
+        input: './node_modules/@angular/animations/fesm2022/animations.mjs',
         output: {
             file: './dist/animations.umd.js',
             format: 'umd',
@@ -8,7 +8,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/animations/fesm2015/browser.mjs',
+        input: './node_modules/@angular/animations/fesm2022/browser.mjs',
         output: {
             file: './dist/animations-browser.umd.js',
             format: 'umd',
@@ -16,7 +16,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/animations/fesm2015/browser/testing.mjs',
+        input: './node_modules/@angular/animations/fesm2022/browser/testing.mjs',
         output: {
             file: './dist/animations-browser-testing.umd.js',
             format: 'umd',
@@ -24,7 +24,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/common/fesm2015/common.mjs',
+        input: './node_modules/@angular/common/fesm2022/common.mjs',
         output: {
             file: './dist/common.umd.js',
             format: 'umd',
@@ -32,7 +32,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/common/fesm2015/http.mjs',
+        input: './node_modules/@angular/common/fesm2022/http.mjs',
         output: {
             file: './dist/common-http.umd.js',
             format: 'umd',
@@ -40,7 +40,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/common/fesm2015/testing.mjs',
+        input: './node_modules/@angular/common/fesm2022/testing.mjs',
         output: {
             file: './dist/common-testing.umd.js',
             format: 'umd',
@@ -48,7 +48,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/common/fesm2015/upgrade.mjs',
+        input: './node_modules/@angular/common/fesm2022/upgrade.mjs',
         output: {
             file: './dist/common-upgrade.umd.js',
             format: 'umd',
@@ -56,7 +56,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/common/fesm2015/http/testing.mjs',
+        input: './node_modules/@angular/common/fesm2022/http/testing.mjs',
         output: {
             file: './dist/common-http-testing.umd.js',
             format: 'umd',
@@ -64,7 +64,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/compiler/fesm2015/compiler.mjs',
+        input: './node_modules/@angular/compiler/fesm2022/compiler.mjs',
         output: {
             file: './dist/compiler.umd.js',
             format: 'umd',
@@ -72,7 +72,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/compiler/fesm2015/testing.mjs',
+        input: './node_modules/@angular/compiler/fesm2022/testing.mjs',
         output: {
             file: './dist/compiler-testing.umd.js',
             format: 'umd',
@@ -80,7 +80,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/core/fesm2015/core.mjs',
+        input: './node_modules/@angular/core/fesm2022/core.mjs',
         output: {
             file: './dist/core.umd.js',
             format: 'umd',
@@ -88,7 +88,15 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/core/fesm2015/testing.mjs',
+        input: './node_modules/@angular/core/fesm2022/rxjs-interop.mjs',
+        output: {
+            file: './dist/core-rxjs-interop.umd.js',
+            format: 'umd',
+            name: 'ng.coreRxjsInterop'
+        }
+    },
+    {
+        input: './node_modules/@angular/core/fesm2022/testing.mjs',
         output: {
             file: './dist/core-testing.umd.js',
             format: 'umd',
@@ -96,7 +104,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/elements/fesm2015/elements.mjs',
+        input: './node_modules/@angular/elements/fesm2022/elements.mjs',
         output: {
             file: './dist/elements.umd.js',
             format: 'umd',
@@ -104,7 +112,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/forms/fesm2015/forms.mjs',
+        input: './node_modules/@angular/forms/fesm2022/forms.mjs',
         output: {
             file: './dist/forms.umd.js',
             format: 'umd',
@@ -112,7 +120,23 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/platform-browser/fesm2015/platform-browser.mjs',
+        input: './node_modules/@angular/localize/fesm2022/localize.mjs',
+        output: {
+            file: './dist/localize.umd.js',
+            format: 'umd',
+            name: 'ng.localize'
+        }
+    },
+    {
+        input: './node_modules/@angular/localize/fesm2022/init.mjs',
+        output: {
+            file: './dist/localize-init.umd.js',
+            format: 'umd',
+            name: 'ng.localizeInit'
+        }
+    },
+    {
+        input: './node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs',
         output: {
             file: './dist/platform-browser.umd.js',
             format: 'umd',
@@ -120,7 +144,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/platform-browser/fesm2015/animations.mjs',
+        input: './node_modules/@angular/platform-browser/fesm2022/animations.mjs',
         output: {
             file: './dist/platform-browser-animations.umd.js',
             format: 'umd',
@@ -128,7 +152,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/platform-browser/fesm2015/testing.mjs',
+        input: './node_modules/@angular/platform-browser/fesm2022/testing.mjs',
         output: {
             file: './dist/platform-browser-testing.umd.js',
             format: 'umd',
@@ -136,7 +160,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/platform-browser-dynamic/fesm2015/platform-browser-dynamic.mjs',
+        input: './node_modules/@angular/platform-browser-dynamic/fesm2022/platform-browser-dynamic.mjs',
         output: {
             file: './dist/platform-browser-dynamic.umd.js',
             format: 'umd',
@@ -144,7 +168,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/platform-browser-dynamic/fesm2015/testing.mjs',
+        input: './node_modules/@angular/platform-browser-dynamic/fesm2022/testing.mjs',
         output: {
             file: './dist/platform-browser-dynamic-testing.umd.js',
             format: 'umd',
@@ -152,7 +176,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/platform-server/fesm2015/platform-server.mjs',
+        input: './node_modules/@angular/platform-server/fesm2022/platform-server.mjs',
         output: {
             file: './dist/platform-server.umd.js',
             format: 'umd',
@@ -160,7 +184,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/platform-server/fesm2015/testing.mjs',
+        input: './node_modules/@angular/platform-server/fesm2022/testing.mjs',
         output: {
             file: './dist/platform-server-testing.umd.js',
             format: 'umd',
@@ -168,7 +192,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/router/fesm2015/router.mjs',
+        input: './node_modules/@angular/router/fesm2022/router.mjs',
         output: {
             file: './dist/router.umd.js',
             format: 'umd',
@@ -176,7 +200,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/router/fesm2015/testing.mjs',
+        input: './node_modules/@angular/router/fesm2022/testing.mjs',
         output: {
             file: './dist/router-testing.umd.js',
             format: 'umd',
@@ -184,7 +208,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/router/fesm2015/upgrade.mjs',
+        input: './node_modules/@angular/router/fesm2022/upgrade.mjs',
         output: {
             file: './dist/router-upgrade.umd.js',
             format: 'umd',
@@ -192,7 +216,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/service-worker/fesm2015/service-worker.mjs',
+        input: './node_modules/@angular/service-worker/fesm2022/service-worker.mjs',
         output: {
             file: './dist/service-worker.umd.js',
             format: 'umd',
@@ -200,7 +224,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/service-worker/fesm2015/config.mjs',
+        input: './node_modules/@angular/service-worker/fesm2022/config.mjs',
         output: {
             file: './dist/service-worker-config.umd.js',
             format: 'umd',
@@ -208,7 +232,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/upgrade/fesm2015/upgrade.mjs',
+        input: './node_modules/@angular/upgrade/fesm2022/upgrade.mjs',
         output: {
             file: './dist/upgrade.umd.js',
             format: 'umd',
@@ -216,7 +240,7 @@ export default [
         }
     },
     {
-        input: './node_modules/@angular/upgrade/fesm2015/static.mjs',
+        input: './node_modules/@angular/upgrade/fesm2022/static.mjs',
         output: {
             file: './dist/upgrade-static.umd.js',
             format: 'umd',

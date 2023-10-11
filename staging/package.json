@@ -2,6 +2,7 @@
   "name": "${project.artifactId}",
   "version": "${version.unrevise}",
   "description": "${project.description}",
+  "type": "module",
   "scripts": {
     "bundle": "rollup -c rollup.config.js"
   },
@@ -12,6 +13,7 @@
     "@angular/core": "${version.unrevise}",
     "@angular/elements": "${version.unrevise}",
     "@angular/forms": "${version.unrevise}",
+    "@angular/localize": "${version.unrevise}",
     "@angular/platform-browser": "${version.unrevise}",
     "@angular/platform-browser-dynamic": "${version.unrevise}",
     "@angular/platform-server": "${version.unrevise}",
@@ -20,6 +22,6 @@
     "@angular/upgrade": "${version.unrevise}"
     },
   "devDependencies": {
-    "rollup": "^2.62.0"
+    "rollup": "^4.0.2"
   }
 }

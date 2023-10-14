@@ -4,7 +4,7 @@
   "description": "${project.description}",
   "type": "module",
   "scripts": {
-    "bundle": "rollup -c rollup.config.js"
+    "postinstall": "rollup -c rollup.config.mjs"
   },
   "dependencies": {
     "@angular/animations": "${version.unrevise}",
@@ -22,6 +22,7 @@
     "@angular/upgrade": "${version.unrevise}"
     },
   "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
     "rollup": "^4.0.2"
   }
 }

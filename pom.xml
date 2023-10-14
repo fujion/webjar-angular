@@ -13,7 +13,6 @@
 	<description>Angular libraries.</description>
 
 	<properties>
-		<skip.minification.js>false</skip.minification.js>
 		<npm-install.skip>false</npm-install.skip>
 	</properties>
 
@@ -67,15 +66,6 @@
 				</executions>
 			</plugin>
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>exec-maven-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>npm-install</id>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
 				<artifactId>maven-antrun-plugin</artifactId>
 				<executions>
 					<execution>
@@ -87,22 +77,6 @@
 							        <filterchain>
 							            <expandproperties />
 							        </filterchain>
-								</copy>
-							</target>
-						</configuration>
-					</execution>
-					<execution>
-						<id>postcompile</id>
-						<configuration>
-							<target>
-								<exec executable="npm" dir="${src.rootdir}" failonerror="true">
-									<arg line="run bundle" />
-								</exec>
-								<copy todir="${webjar.target}">
-									<fileset dir="${src.rootdir}" includes="LICENSE,README.md" />
-								</copy>
-								<copy todir="${webjar.target}/dist">
-									<fileset dir="${src.rootdir}/dist" />
 								</copy>
 							</target>
 						</configuration>

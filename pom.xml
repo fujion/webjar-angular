@@ -12,6 +12,18 @@
 	<version>16.2.10-SNAPSHOT</version>
 	<description>Angular libraries.</description>
 
+	<dependencies>
+		<dependency>
+			<groupId>org.fujion.webjars</groupId>
+			<artifactId>webjar-rxjs</artifactId>
+			<version>7.8.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.fujion.webjars</groupId>
+			<artifactId>webjar-zonejs</artifactId>
+			<version>0.14.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
